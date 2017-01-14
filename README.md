@@ -1,1 +1,0 @@
-# opengl-rt3d

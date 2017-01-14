@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\States">
+      <UniqueIdentifier>{2aa44d1c-1e7b-4511-baef-f7c9457b758b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\States">
+      <UniqueIdentifier>{e6613706-a706-4f5b-a1c7-f9471a4d828d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{015a9c70-4354-4c1b-a187-4dd44b29fad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{93c52a52-69c5-4e93-88a9-6d446e861ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{6d3c656c-6ed3-40ba-b55b-831d8208b42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{114d664c-3caa-4a9a-86bc-3ca50e754052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Vehicles">
+      <UniqueIdentifier>{c8f24941-7371-48ad-bde1-4cdcae1f817f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Vehicle">
+      <UniqueIdentifier>{8978aa2e-e187-4aad-a56c-23c613933971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Buildings">
+      <UniqueIdentifier>{0724027a-bc51-48ed-9109-01a71ee3d184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Buildings">
+      <UniqueIdentifier>{004fa94d-fb81-4775-8a84-bb0f9ac02459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Obstacles">
+      <UniqueIdentifier>{93e0b1c7-f3b0-44ff-b071-f6b09b65d2c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Obstacles">
+      <UniqueIdentifier>{f5b7a200-66cd-4f32-8081-1f86cda99ca6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Texture.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Model.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\Intro.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\Menu.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Button.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Font.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\Level.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Layer.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\Skybox.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Vehicles\Car.cpp">
+      <Filter>Source Files\Objects\Vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Vehicles\Police.cpp">
+      <Filter>Source Files\Objects\Vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Buildings\Building.cpp">
+      <Filter>Source Files\Objects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Buildings\House.cpp">
+      <Filter>Source Files\Objects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Player.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Obstacles\Barrier.cpp">
+      <Filter>Source Files\Objects\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Obstacles\Road.cpp">
+      <Filter>Source Files\Objects\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Obstacles\Treasure.cpp">
+      <Filter>Source Files\Objects\Obstacles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc\AABB.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Buildings\School.cpp">
+      <Filter>Source Files\Objects\Buildings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\Select.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Demo.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\End.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Model.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Texture.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\States\Intro.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\States\Level.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\States\Menu.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Button.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Font.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Layer.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\Skybox.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Vehicles\Car.h">
+      <Filter>Header Files\Objects\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Vehicles\Police.h">
+      <Filter>Header Files\Objects\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Buildings\Building.h">
+      <Filter>Header Files\Objects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Buildings\House.h">
+      <Filter>Header Files\Objects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Player.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Obstacles\Barrier.h">
+      <Filter>Header Files\Objects\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Obstacles\Road.h">
+      <Filter>Header Files\Objects\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Obstacles\Treasure.h">
+      <Filter>Header Files\Objects\Obstacles</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc\AABB.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Buildings\School.h">
+      <Filter>Header Files\Objects\Buildings</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\States\Select.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Objects\Demo.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\States\End.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\Font.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Shaders\Phong.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Shaders\Texture.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Shaders\Ortho.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Data\Shaders\Phong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

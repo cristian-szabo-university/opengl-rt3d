@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Coursework", "Coursework\Coursework.vcxproj", "{19960052-09A0-48AE-A6B6-FB310EA6B044}"
+	ProjectSection(ProjectDependencies) = postProject
+		{38822AAB-B21C-4F59-B2BB-EE40D3442B61} = {38822AAB-B21C-4F59-B2BB-EE40D3442B61}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zeno", "Zeno\Zeno.vcxproj", "{38822AAB-B21C-4F59-B2BB-EE40D3442B61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19960052-09A0-48AE-A6B6-FB310EA6B044}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19960052-09A0-48AE-A6B6-FB310EA6B044}.Debug|Win32.Build.0 = Debug|Win32
+		{19960052-09A0-48AE-A6B6-FB310EA6B044}.Release|Win32.ActiveCfg = Release|Win32
+		{19960052-09A0-48AE-A6B6-FB310EA6B044}.Release|Win32.Build.0 = Release|Win32
+		{38822AAB-B21C-4F59-B2BB-EE40D3442B61}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38822AAB-B21C-4F59-B2BB-EE40D3442B61}.Debug|Win32.Build.0 = Debug|Win32
+		{38822AAB-B21C-4F59-B2BB-EE40D3442B61}.Release|Win32.ActiveCfg = Release|Win32
+		{38822AAB-B21C-4F59-B2BB-EE40D3442B61}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

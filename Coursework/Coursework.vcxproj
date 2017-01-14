@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19960052-09A0-48AE-A6B6-FB310EA6B044}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Coursework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IncludePath>$(ProjectDir)External\irrKlang\Include;$(ProjectDir)External\Assimp\Include;$(ProjectDir)External\FreeType\Include;$(ProjectDir)External\FreeImage\Include;$(ProjectDir)Include;$(SolutionDir)Zeno\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)External\irrKlang\Lib;$(ProjectDir)External\Assimp\Lib;$(ProjectDir)External\FreeType\Lib;$(ProjectDir)External\FreeImage\Lib;$(SolutionDir)Zeno\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;zeno.lib;freeimaged.lib;freetype253mt_d.lib;assimp.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GameBase.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\GameState.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Misc\AABB.cpp" />
+    <ClCompile Include="Source\Misc\Button.cpp" />
+    <ClCompile Include="Source\Misc\Font.cpp" />
+    <ClCompile Include="Source\Misc\Layer.cpp" />
+    <ClCompile Include="Source\Misc\Model.cpp" />
+    <ClCompile Include="Source\Misc\Skybox.cpp" />
+    <ClCompile Include="Source\Misc\Texture.cpp" />
+    <ClCompile Include="Source\Objects\Buildings\Building.cpp" />
+    <ClCompile Include="Source\Objects\Buildings\House.cpp" />
+    <ClCompile Include="Source\Objects\Buildings\School.cpp" />
+    <ClCompile Include="Source\Objects\Demo.cpp" />
+    <ClCompile Include="Source\Objects\Obstacles\Barrier.cpp" />
+    <ClCompile Include="Source\Objects\Obstacles\Road.cpp" />
+    <ClCompile Include="Source\Objects\Obstacles\Treasure.cpp" />
+    <ClCompile Include="Source\Objects\Player.cpp" />
+    <ClCompile Include="Source\Objects\Vehicles\Car.cpp" />
+    <ClCompile Include="Source\Objects\Vehicles\Police.cpp" />
+    <ClCompile Include="Source\States\End.cpp" />
+    <ClCompile Include="Source\States\Intro.cpp" />
+    <ClCompile Include="Source\States\Level.cpp" />
+    <ClCompile Include="Source\States\Menu.cpp" />
+    <ClCompile Include="Source\States\Select.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\GameBase.h" />
+    <ClInclude Include="Include\GameObject.h" />
+    <ClInclude Include="Include\GameState.h" />
+    <ClInclude Include="Include\Misc\AABB.h" />
+    <ClInclude Include="Include\Misc\Button.h" />
+    <ClInclude Include="Include\Misc\Font.h" />
+    <ClInclude Include="Include\Misc\Layer.h" />
+    <ClInclude Include="Include\Misc\Model.h" />
+    <ClInclude Include="Include\Misc\Skybox.h" />
+    <ClInclude Include="Include\Misc\Texture.h" />
+    <ClInclude Include="Include\Objects\Buildings\Building.h" />
+    <ClInclude Include="Include\Objects\Buildings\House.h" />
+    <ClInclude Include="Include\Objects\Buildings\School.h" />
+    <ClInclude Include="Include\Objects\Demo.h" />
+    <ClInclude Include="Include\Objects\Obstacles\Barrier.h" />
+    <ClInclude Include="Include\Objects\Obstacles\Road.h" />
+    <ClInclude Include="Include\Objects\Obstacles\Treasure.h" />
+    <ClInclude Include="Include\Objects\Player.h" />
+    <ClInclude Include="Include\Objects\Vehicles\Car.h" />
+    <ClInclude Include="Include\Objects\Vehicles\Police.h" />
+    <ClInclude Include="Include\States\End.h" />
+    <ClInclude Include="Include\States\Intro.h" />
+    <ClInclude Include="Include\States\Level.h" />
+    <ClInclude Include="Include\States\Menu.h" />
+    <ClInclude Include="Include\States\Select.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\Font.frag" />
+    <None Include="Data\Shaders\Ortho.vert" />
+    <None Include="Data\Shaders\Phong.vert" />
+    <None Include="Data\Shaders\Phong.frag" />
+    <None Include="Data\Shaders\Texture.frag" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
