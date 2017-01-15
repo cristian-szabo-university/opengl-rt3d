@@ -1,5 +1,5 @@
 <img src="project-logo.png" align="right" />
-# Real-Time 3D Graphics - OpenGL
+# Real-Time 3D Coursework - OpenGL
 
 Writting in C/C++ the graphical application is based on various libraries to create a real virtual word. The environment includes 3D objects and animations, 3D sounds played at different locations and simulated light to give to the 3D objects the real-life effect. A 3D graphical library was developed to reduce the development process of the game which provides wrappers around OpenGL functions to manage easily textures, 3D objects, shaders and materials. 
 
